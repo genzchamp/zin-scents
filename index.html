@@ -32,7 +32,7 @@
       padding:2rem;
       background:
         linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.85)),
-        url('https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1400&q=80');
+        url('https://images.unsplash.com/photo-1617038260897-41a1f14a6d8b?auto=format&fit=crop&w=1400&q=80');
       background-size:cover;
       background-position:center;
     }
@@ -40,9 +40,34 @@
 
     header h1{
       font-family:'Playfair Display', serif;
-      font-size:3rem;
+      font-size:3.2rem;
       color:var(--gold);
-      letter-spacing:2px;
+      letter-spacing:3px;
+      animation:fadeUp 1.2s ease forwards;
+    }
+
+    header p{
+      max-width:650px;
+      margin:1rem auto 2.2rem;
+      font-size:1.1rem;
+      opacity:0;
+      animation:fadeUp 1.2s ease .3s forwards;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:0.9rem 2.2rem;
+      border:1px solid var(--gold);
+      color:var(--gold);
+      text-decoration:none;
+      transition:.35s ease;
+      opacity:0;
+      animation:fadeUp 1.2s ease .6s forwards;
+    }
+
+    @keyframes fadeUp{
+      from{opacity:0; transform:translateY(25px)}
+      to{opacity:1; transform:translateY(0)}
     }
 
     header p{
@@ -92,10 +117,21 @@
     }
 
     .product{
-      background:#111;
-      padding:2rem;
+      position:relative;
+      background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.85)),
+        url('https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=900&q=80');
+      background-size:cover;
+      background-position:center;
+      padding:3rem 1.5rem;
       border:1px solid #222;
       text-align:center;
+      transition:.4s ease;
+    }
+
+    .product:hover{
+      transform:translateY(-6px);
+      border-color:var(--dark-gold);
     }
 
     .product h3{
@@ -111,10 +147,17 @@
     }
 
     .why div{
-      background:#111;
-      padding:1.5rem;
+      background:
+        linear-gradient(135deg, rgba(201,162,77,.08), rgba(0,0,0,.9));
+      padding:1.6rem;
       border:1px solid #222;
       text-align:center;
+      transition:.35s ease;
+    }
+
+    .why div:hover{
+      border-color:var(--gold);
+      transform:translateY(-4px);
     }
 
     footer{
@@ -133,7 +176,7 @@
 <body>  <!-- HERO -->  <header>
     <div>
       <h1>ZIN Scents, Scarfs & Abaya</h1>
-      <p>Luxury unisex fragrances crafted to leave a lasting impression. Calm. Bold. Timeless.</p>
+      <p>Luxury unisex fragrances, elegant abayas, and refined scarfs — crafted to leave a calm, confident, and lasting impression.</p>
       <a class="btn" href="https://wa.me/2348132679403">Order via WhatsApp</a>
     </div>
   </header>  <!-- ABOUT -->  <section>
@@ -146,7 +189,7 @@
     <h2>Featured Scents</h2>
     <div class="products">
       <div class="product">
-        <h3>Signature Oud</h3>
+        <h3>ZIN Oud</h3>
         <p>Deep, warm, and unforgettable. Perfect for day or night.</p>
       </div>
       <div class="product">
