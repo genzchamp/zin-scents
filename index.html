@@ -172,7 +172,32 @@
       text-decoration:none;
     }
 
-  </style></head>
+      body::before{
+      content:'';
+      position:fixed;
+      inset:0;
+      background:url('llogo.png') no-repeat center;
+      background-size:420px;
+      opacity:0.04;
+      pointer-events:none;
+      z-index:0;
+    }
+
+    main, header, section, footer{ position:relative; z-index:1; }
+
+    .product .cta{
+      margin-top:1.1rem;
+      display:inline-block;
+      padding:0.55rem 1.2rem;
+      border:1px solid var(--gold);
+      color:var(--gold);
+      text-decoration:none;
+      font-size:0.9rem;
+      transition:.3s ease;
+    }
+    .product .cta:hover{ background:var(--gold); color:#000; }
+
+</style></head>
 <body>  <!-- HERO -->  <!-- HERO -->  <header>
     <div>
       <img src="llogo.png" alt="ZIN Scents Logo" style="width:180px; margin-bottom:1.2rem;" />
@@ -180,45 +205,52 @@
       <p>Luxury unisex fragrances, elegant abayas, and refined scarfs — crafted to leave a calm, confident, and lasting impression.</p>
       <a class="btn" href="https://wa.me/2348132679403">Order via WhatsApp</a>
     </div>
-  </header>  <!-- ABOUT -->  <section>
-    <h2>About ZIN</h2>
-    <p class="about">
-      ZIN Scents blends elegance and identity into carefully curated unisex fragrances.
-      Our scents are designed for individuals who value calm confidence, luxury, and presence.
-    </p>
-  </section>  <!-- PRODUCTS -->  <section>
+  </header>  <!-- PRODUCTS -->  <section>
     <h2>Featured Scents</h2>
     <div class="products">
       <div class="product">
         <h3>ZIN Oud</h3>
-        <p>Deep, warm, and unforgettable. Perfect for day or night.</p>
-      </div>
-      <div class="product">
-        <h3>Silk Amber</h3>
-        <p>Soft luxury with a calm, confident finish.</p>
-      </div>
-      <div class="product">
-        <h3>Noir Gold</h3>
-        <p>Bold, rich, and refined for lasting impressions.</p>
-      </div>
-    </div>
+        <p>Deep, warm, and unforgettable. Perfect for day or night.</p><a class="cta" href="https://wa.me/2348132679403">Order on WhatsApp</a>
+  </div>
+  <div class="product">
+    <h3>Silk Amber</h3>
+    <p>Soft luxury with a calm, confident finish.</p>
+  
+    <a class="cta" href="https://wa.me/2348132679403">Order on WhatsApp</a>
+  </div>
+  <div class="product">
+    <h3>Noir Gold</h3>
+    <p>Bold, rich, and refined for lasting impressions.</p>
+  
+    <a class="cta" href="https://wa.me/2348132679403">Order on WhatsApp</a>
+  </div>
+</div>
+
   </section>  <!-- ABAYA & SCARF -->  <section>
     <h2>Abayas & Scarfs</h2>
     <p class="about">Our abayas and scarfs are thoughtfully selected to complement our fragrances — modest, elegant, and timeless pieces designed for everyday grace.</p>
     <div class="products">
       <div class="product">
         <h3>Classic Black Abaya</h3>
-        <p>Flowing silhouette with a calm, premium finish.</p>
-      </div>
-      <div class="product">
-        <h3>Silk Cream Scarf</h3>
-        <p>Soft texture with subtle elegance for any outfit.</p>
-      </div>
-      <div class="product">
-        <h3>Midnight Gold Scarf</h3>
-        <p>Rich tones designed to elevate modest fashion.</p>
-      </div>
-    </div>
+        <p>Flowing silhouette with a calm, premium finish.</p><a class="cta" href="https://wa.me/2348132679403">Order on WhatsApp</a>
+  </div>
+  <div class="product">
+    <h3>Silk Cream Scarf</h3>
+    <p>Soft texture with subtle elegance for any outfit.</p>
+  
+    <a class="cta" href="https://wa.me/2348132679403">Order on WhatsApp</a>
+  </div>
+  <div class="product">
+    <h3>Midnight Gold Scarf</h3>
+    <p>Rich tones designed to elevate modest fashion.</p>
+  
+    <a class="cta" href="https://wa.me/2348132679403">Order on WhatsApp</a>
+  </div>
+</div>
+
+  </section>  <!-- ABOUT -->  <section>
+    <h2>About ZIN</h2>
+    <p class="about">ZIN Scents blends elegance and identity into carefully curated unisex fragrances alongside modest, refined abayas and scarfs. Designed for calm confidence, luxury, and everyday grace.</p>
   </section>  <!-- WHY CHOOSE US -->  <section>
     <h2>Why ZIN</h2>
     <div class="why">
