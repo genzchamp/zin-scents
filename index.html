@@ -1,269 +1,180 @@
 <!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZIN Scents, Scarfs & Abaya</title>  <!-- Google Fonts -->  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">  <style>
-    :root{
-      --black:#0b0b0b;
-      --gold:#c9a24d;
-      --dark-gold:#9e7c2f;
-      --cream:#f5f1e8;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZIN Scents, Scarfs & Abaya</title>
+  <link rel="icon" type="image/png" href="llogo.png">  <style>
+    :root {
+      --gold: #d4af37;
+      --cream: #f5f5dc;
+      --black: #0b0b0b;
     }
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: var(--black);
+      color: var(--cream);
+      position: relative;
     }
 
-    body{
-      font-family:'Poppins', sans-serif;
-      background:var(--black);
-      color:var(--cream);
-      line-height:1.6;
+    /* Logo watermark */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: url('llogo.png') no-repeat center;
+      background-size: 420px;
+      opacity: 0.03;
+      pointer-events: none;
+      z-index: -1;
     }
 
-    header{
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      padding:2rem;
-      background:
-        linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.85)),
-        url('https://images.unsplash.com/photo-1617038260897-41a1f14a6d8b?auto=format&fit=crop&w=1400&q=80');
-      background-size:cover;
-      background-position:center;
-    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: var(--black);
+      position: relative;
+      z-index: 2;
     }
 
-    header h1{
-      font-family:'Playfair Display', serif;
-      font-size:3.2rem;
-      color:var(--gold);
-      letter-spacing:3px;
-      animation:fadeUp 1.2s ease forwards;
+    header img {
+      height: 60px;
     }
 
-    header p{
-      max-width:650px;
-      margin:1rem auto 2.2rem;
-      font-size:1.1rem;
-      opacity:0;
-      animation:fadeUp 1.2s ease .3s forwards;
+    /* HERO SECTION */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)), url('images/hero-perfume.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      z-index: 1;
     }
 
-    .btn{
-      display:inline-block;
-      padding:0.9rem 2.2rem;
-      border:1px solid var(--gold);
-      color:var(--gold);
-      text-decoration:none;
-      transition:.35s ease;
-      opacity:0;
-      animation:fadeUp 1.2s ease .6s forwards;
+    .hero-content {
+      animation: fadeUp 1.5s ease forwards;
     }
 
-    @keyframes fadeUp{
-      from{opacity:0; transform:translateY(25px)}
-      to{opacity:1; transform:translateY(0)}
+    .hero-content h1 {
+      font-size: 4rem;
+      color: var(--gold);
+      letter-spacing: 3px;
     }
 
-    header p{
-      max-width:600px;
-      margin:1rem auto 2rem;
-      font-size:1.05rem;
+    .hero-content h2 {
+      font-size: 1.5rem;
+      color: var(--cream);
+      margin: 10px 0;
     }
 
-    .btn{
-      display:inline-block;
-      padding:0.9rem 2rem;
-      border:1px solid var(--gold);
-      color:var(--gold);
-      text-decoration:none;
-      transition:.3s ease;
+    .hero-content p {
+      color: #ddd;
+      margin-bottom: 30px;
     }
 
-    .btn:hover{
-      background:var(--gold);
-      color:#000;
+    .hero-btn {
+      padding: 14px 32px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
     }
 
-    section{
-      padding:4rem 1.5rem;
-      max-width:1100px;
-      margin:auto;
+    .hero-btn:hover {
+      background: var(--gold);
+      color: black;
     }
 
-    section h2{
-      font-family:'Playfair Display', serif;
-      color:var(--gold);
-      margin-bottom:1.5rem;
-      text-align:center;
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
-    .about{
-      text-align:center;
-      max-width:800px;
-      margin:auto;
+    @media (max-width: 768px) {
+      .hero-content h1 { font-size: 2.8rem; }
+      .hero-content h2 { font-size: 1.2rem; }
     }
 
-    .products{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:2rem;
-      margin-top:3rem;
+    section { padding: 60px 20px; text-align: center; }
+    h2 { font-size: 2rem; margin-bottom: 30px; color: var(--gold); }
+    .about { max-width: 700px; margin: 0 auto 40px; line-height: 1.6; }
+
+    .products { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .product { flex: 1 1 250px; max-width: 300px; background-color: rgba(0,0,0,0.65); padding: 20px; border-radius: 12px; text-align: center; }
+    .product h3 { font-size: 1.2rem; margin-bottom: 10px; }
+    .product p { font-size: 0.95rem; margin-bottom: 10px; }
+    .product .cta {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 0.55rem 1.2rem;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: .3s ease;
     }
+    .product .cta:hover { background: var(--gold); color: #000; }
 
-    .product{
-      position:relative;
-      background:
-        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.85)),
-        url('https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?auto=format&fit=crop&w=900&q=80');
-      background-size:cover;
-      background-position:center;
-      padding:3rem 1.5rem;
-      border:1px solid #222;
-      text-align:center;
-      transition:.4s ease;
-    }
-
-    .product:hover{
-      transform:translateY(-6px);
-      border-color:var(--dark-gold);
-    }
-
-    .product h3{
-      color:var(--gold);
-      margin-bottom:0.5rem;
-    }
-
-    .why{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:1.5rem;
-      margin-top:2rem;
-    }
-
-    .why div{
-      background:
-        linear-gradient(135deg, rgba(201,162,77,.08), rgba(0,0,0,.9));
-      padding:1.6rem;
-      border:1px solid #222;
-      text-align:center;
-      transition:.35s ease;
-    }
-
-    .why div:hover{
-      border-color:var(--gold);
-      transform:translateY(-4px);
-    }
-
-    footer{
-      text-align:center;
-      padding:2rem 1rem;
-      border-top:1px solid #222;
-      font-size:0.9rem;
-    }
-
-    footer a{
-      color:var(--gold);
-      text-decoration:none;
-    }
-
-      body::before{
-      content:'';
-      position:fixed;
-      inset:0;
-      background:url('llogo.png') no-repeat center;
-      background-size:420px;
-      opacity:0.04;
-      pointer-events:none;
-      z-index:0;
-    }
-
-    main, header, section, footer{ position:relative; z-index:1; }
-
-    .product .cta{
-      margin-top:1.1rem;
-      display:inline-block;
-      padding:0.55rem 1.2rem;
-      border:1px solid var(--gold);
-      color:var(--gold);
-      text-decoration:none;
-      font-size:0.9rem;
-      transition:.3s ease;
-    }
-    .product .cta:hover{ background:var(--gold); color:#000; }
-
-</style></head>
-<body>  <!-- HERO -->  <!-- HERO -->  <header>
-    <div>
-      <img src="llogo.png" alt="ZIN Scents Logo" style="width:180px; margin-bottom:1.2rem;" />
-      <h1>ZIN Scents, Scarfs & Abaya</h1>
-      <p>Luxury unisex fragrances, elegant abayas, and refined scarfs — crafted to leave a calm, confident, and lasting impression.</p>
-      <a class="btn" href="https://wa.me/2348132679403">Order via WhatsApp</a>
+  </style></head>
+<body><header>
+  <img src="llogo.png" alt="ZIN Logo">
+</header><!-- HERO --><section class="hero">
+  <div class="hero-content">
+    <h1>ZIN</h1>
+    <h2>Scents, Scarfs & Abaya</h2>
+    <p>Luxury fragrance and modest fashion for all</p>
+    <a href="#products" class="hero-btn">Shop Collection</a>
+  </div>
+</section><!-- PRODUCTS --><section id="products">
+  <h2>Featured Scents</h2>
+  <div class="products">
+    <div class="product">
+      <h3>ZIN Oud</h3>
+      <p>Deep, warm, and unforgettable.</p>
+      <a class="cta" href="https://wa.me/2348132679403">Order on WhatsApp</a>
     </div>
-  </header>  <!-- PRODUCTS -->  <section>
-    <h2>Featured Scents</h2>
-    <div class="products">
-      <div class="product">
-        <h3>ZIN Oud</h3>
-        <p>Deep, warm, and unforgettable. Perfect for day or night.</p><a class="cta" href="https://wa.me/2348132679403">Order on WhatsApp</a>
-  </div>
-  <div class="product">
-    <h3>Silk Amber</h3>
-    <p>Soft luxury with a calm, confident finish.</p>
-  
-    <a class="cta" href="https://wa.me/2348132679403">Order on WhatsApp</a>
-  </div>
-  <div class="product">
-    <h3>Noir Gold</h3>
-    <p>Bold, rich, and refined for lasting impressions.</p>
-  
-    <a class="cta" href="https://wa.me/2348132679403">Order on WhatsApp</a>
-  </div>
-</div>
-
-  </section>  <!-- ABAYA & SCARF -->  <section>
-    <h2>Abayas & Scarfs</h2>
-    <p class="about">Our abayas and scarfs are thoughtfully selected to complement our fragrances — modest, elegant, and timeless pieces designed for everyday grace.</p>
-    <div class="products">
-      <div class="product">
-        <h3>Classic Black Abaya</h3>
-        <p>Flowing silhouette with a calm, premium finish.</p><a class="cta" href="https://wa.me/2348132679403">Order on WhatsApp</a>
-  </div>
-  <div class="product">
-    <h3>Silk Cream Scarf</h3>
-    <p>Soft texture with subtle elegance for any outfit.</p>
-  
-    <a class="cta" href="https://wa.me/2348132679403">Order on WhatsApp</a>
-  </div>
-  <div class="product">
-    <h3>Midnight Gold Scarf</h3>
-    <p>Rich tones designed to elevate modest fashion.</p>
-  
-    <a class="cta" href="https://wa.me/2348132679403">Order on WhatsApp</a>
-  </div>
-</div>
-
-  </section>  <!-- ABOUT -->  <section>
-    <h2>About ZIN</h2>
-    <p class="about">ZIN Scents blends elegance and identity into carefully curated unisex fragrances alongside modest, refined abayas and scarfs. Designed for calm confidence, luxury, and everyday grace.</p>
-  </section>  <!-- WHY CHOOSE US -->  <section>
-    <h2>Why ZIN</h2>
-    <div class="why">
-      <div>Unisex Luxury Scents & Modest Wear</div>
-      <div>Premium Long‑Lasting Quality</div>
-      <div>Calm, Elegant Aesthetic</div>
-      <div>Accessible Luxury</div>
+    <div class="product">
+      <h3>Silk Amber</h3>
+      <p>Soft luxury with a calm, confident finish.</p>
+      <a class="cta" href="https://wa.me/2348132679403">Order on WhatsApp</a>
     </div>
-  </section>  <!-- CTA -->  <section style="text-align:center;">
-    <h2>Place Your Order</h2>
-    <p>Ready to elevate your scent game?</p><br>
-    <a class="btn" href="https://wa.me/2348132679403">Chat on WhatsApp</a>
-  </section>  <!-- FOOTER -->  <footer>
-    <p>&copy; 2026 ZIN Scents, Scarfs & Abaya | <a href="#">Instagram</a></p>
-  </footer></body>
+    <div class="product">
+      <h3>Noir Gold</h3>
+      <p>Bold, rich, and refined for lasting impressions.</p>
+      <a class="cta" href="https://wa.me/2348132679403">Order on WhatsApp</a>
+    </div>
+  </div>
+</section><!-- ABAYA & SCARF --><section>
+  <h2>Abayas & Scarfs</h2>
+  <p class="about">Our abayas and scarfs are thoughtfully selected to complement our fragrances — modest, elegant, and timeless pieces designed for everyday grace.</p>
+  <div class="products">
+    <div class="product">
+      <h3>Classic Black Abaya</h3>
+      <p>Flowing silhouette with a calm, premium finish.</p>
+      <a class="cta" href="https://wa.me/2348132679403">Order on WhatsApp</a>
+    </div>
+    <div class="product">
+      <h3>Silk Cream Scarf</h3>
+      <p>Soft texture with subtle elegance for any outfit.</p>
+      <a class="cta" href="https://wa.me/2348132679403">Order on WhatsApp</a>
+    </div>
+    <div class="product">
+      <h3>Midnight Gold Scarf</h3>
+      <p>Rich tones designed to elevate modest fashion.</p>
+      <a class="cta" href="https://wa.me/2348132679403">Order on WhatsApp</a>
+    </div>
+  </div>
+</section><!-- ABOUT --><section>
+  <h2>About ZIN</h2>
+  <p class="about">ZIN Scents blends elegance and identity into carefully curated unisex fragrances alongside modest, refined abayas and scarfs. Designed for calm confidence, luxury, and everyday grace.</p>
+</section></body>
 </html>
