@@ -1,245 +1,297 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZIN Scents, Scarfs & Abaya</title>
-  <link rel="icon" type="image/png" href="llogo.png">
-  <style>
-    :root {
-      --gold: #d4af37;
-      --cream: #f5f5dc;
-      --black: #0b0b0b;
-    }body {
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZIN Scents, Scarfs & Abaya</title>
+<link rel="icon" type="image/png" href="llogo.png">
+
+<style>
+:root {
+  --gold: #d4af37;
+  --cream: #f5f5dc;
+  --black: #0b0b0b;
+}
+
+body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   background-color: var(--black);
   color: var(--cream);
-  position: relative;
 }
 
-/* Logo watermark */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background: url('llogo.png') no-repeat center;
-  background-size: 420px;
-  opacity: 0.03;
-  pointer-events: none;
-  z-index: -1;
-}
-
+/* Header */
 header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
-  background-color: var(--black);
-  position: relative;
-  z-index: 2;
-}
-
-.menu-btn {
-  font-size: 1.5rem;
-  color: var(--gold);
-  cursor: pointer;
+  align-items: center;
+  padding: 15px 20px;
 }
 
 header img {
-  height: 60px;
-  margin: 0 auto;
-  display: block;
+  height: 55px;
 }
 
-.whatsapp-icon {
+.menu-btn, .whatsapp-icon {
   font-size: 1.5rem;
   color: var(--gold);
+  cursor: pointer;
   text-decoration: none;
 }
 
-/* HERO SECTION */
+/* Hero Section */
 .hero {
   height: 90vh;
-  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)), url('hero-perfume.jpg');
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)), url('hero-perfume.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px;
-  position: relative;
-  z-index: 1;
 }
 
-.hero-content {
-  animation: fadeUp 1.5s ease forwards;
-}
-
-.hero-content h1 {
-  font-size: 4;5rem;
-  color: var(--gold);
+.hero h1 {
+  font-size: 4rem;
   letter-spacing: 4px;
+  color: var(--gold);
+  margin-bottom: 10px;
 }
 
-.hero-content h2 {
-  font-size: 1.5rem;
-  color: var(--cream);
-  margin: 10px 0;
+.hero h2 {
+  font-weight: 300;
 }
 
-.hero-content p {
-  color: #ddd;
-  margin-bottom: 30px;
-}
-
-.hero-btn {
-  padding: 14px 32px;
+.hero a {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
   border: 1px solid var(--gold);
   color: var(--gold);
   text-decoration: none;
-  font-weight: bold;
   transition: 0.3s;
 }
 
-.hero-btn:hover {
+.hero a:hover {
   background: var(--gold);
   color: black;
 }
 
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Section */
+section {
+  padding: 70px 20px;
+  text-align: center;
 }
 
-@media (max-width: 768px) {
-  .hero-content h1 { font-size: 3rem; }
-  .hero-content h2 { font-size: 1.5rem; }
+h2 {
+  color: var(--gold);
+  margin-bottom: 40px;
+  font-size: 2rem;
 }
 
-section { padding: 60px 20px; text-align: center; }
-h2 { font-size: 2rem; margin-bottom: 30px; color: var(--gold); }
-.about { max-width: 700px; margin: 0 auto 40px; line-height: 1.6; }
+/* Products Grid */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
 
-.products { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-.product { flex: 1 1 250px; max-width: 300px; background-color: rgba(0,0,0,0.65); padding: 20px; border-radius: 12px; text-align: center; }
-.product h3 { font-size: 1.2rem; margin-bottom: 10px; }
-.product p { font-size: 0.95rem; margin-bottom: 10px; }
-.product .cta { display: inline-block; margin-top: 10px; padding: 0.55rem 1.2rem; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; font-size: 0.9rem; transition: .3s ease; }
-.product .cta:hover { background: var(--gold); color: #000; }
-
-/* SOCIAL ICONS */
-.social-icons { display: flex; justify-content: center; gap: 20px; margin-top: 20px; }
-.social-icons a { color: var(--gold); font-size: 1.5rem; text-decoration: none; }
-
-/* MOBILE MENU */
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: -100%;
-  width: 70%;
-  height: 100vh;
-  background: #0b0b0b;
-  padding: 60px 20px;
+.product-card {
+  background: #111;
+  border-radius: 15px;
+  overflow: hidden;
   transition: 0.3s ease;
-  z-index: 10;
+  padding-bottom: 20px;
 }
 
-.mobile-menu a {
-  display: block;
-  color: #d4af37;
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 15px;
+}
+
+.product-info h3 {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+}
+
+.product-info p.price {
+  color: var(--gold);
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.product-info p.description {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.product-info a {
+  display: inline-block;
+  padding: 8px 20px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
   text-decoration: none;
-  margin-bottom: 20px;
-  font-size: 1.2rem;
+  font-size: 0.85rem;
+  transition: 0.3s;
 }
 
-.mobile-menu.show {
-  left: 0;
+.product-info a:hover {
+  background: var(--gold);
+  color: black;
+}
+
+/* About */
+.about {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: #111;
+  font-size: 0.85rem;
+  color: #888;
 }
 
 html {
   scroll-behavior: smooth;
 }
+</style>
 
-  </style>
-  <!-- Use FontAwesome for icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-<body><header>
-  <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
+
+<body>
+
+<header>
+  <div class="menu-btn">&#9776;</div>
   <img src="llogo.png" alt="ZIN Logo">
-  <a class="whatsapp-icon" href="https://wa.me/2347014718354" target="_blank"><i class="fab fa-whatsapp"></i></a>
-</header><nav id="mobileMenu" class="mobile-menu">
-  <a href="#products" onclick="toggleMenu()">Products</a>
-  <a href="#about" onclick="toggleMenu()">About</a>
-  <a href="#contact" onclick="toggleMenu()">Contact</a>
-</nav><!-- HERO --><section class="hero">
-  <div class="hero-content">
+  <a class="whatsapp-icon" href="https://wa.me/2347014718354" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
     <h1>ZIN</h1>
     <h2>Scents, Scarfs & Abaya</h2>
-    <p>Luxury fragrance and modest fashion for all</p>
-    <a href="#products" class="hero-btn">Shop Collection</a>
+    <a href="#products">Shop Collection</a>
   </div>
-</section><!-- PRODUCTS --><section id="products">
-  <h2>Featured Products</h2>
-  <div class="products">
-    <div class="product" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.85)), url('avanti5k.jpg'); background-size: cover; background-position: center;">
-      <h3>Avanti</h3>
-      <p>₦5,000</p>
-      <a class="cta" href="https://wa.me/2347014718354">Order on WhatsApp</a>
-    </div><div class="product" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.85)), url('asad30k.jpg'); background-size: cover; background-position: center;">
-  <h3>Asad</h3>
-  <p>₦30,000</p>
-  <a class="cta" href="https://wa.me/2347014718354">Order on WhatsApp</a>
-</div>
+</section>
 
-<div class="product" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.85)), url('ameeratalarab30k.jpg'); background-size: cover; background-position: center;">
-  <h3>Ameerat-al-arab</h3>
-  <p>₦30,000</p>
-  <a class="cta" href="https://wa.me/2347014718354">Order on WhatsApp</a>
-</div>
+<!-- PRODUCTS -->
+<section id="products">
+<h2>Featured Products</h2>
 
-<div class="product" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.85)), url('24khomme8k.jpg'); background-size: cover; background-position: center;">
-  <h3>24K Homme</h3>
-  <p>₦8,000</p>
-  <a class="cta" href="https://wa.me/2347014718354">Order on WhatsApp</a>
-</div>
+<div class="products">
 
-<div class="product" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.85)), url('scarf.jpg'); background-size: cover; background-position: center;">
-  <h3>Classic Scarf</h3>
-  <p>₦5,000</p>
-  <a class="cta" href="https://wa.me/2347014718354">Place your order</a>
-</div>
-
-<div class="product" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.85)), url('jscarf.jpg'); background-size: cover; background-position: center;">
-  <h3>JS Scarf</h3>
-  <p>₦5,000</p>
-  <a class="cta" href="https://wa.me/2347014718354">Place Order</a>
-</div>
-
-    <div class="product" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.85)), url('jb.jpg'); background-size: cover; background-position: center;">
-  <h3>Jalabiya for men</h3>
-  <p>₦</p>
-  <a class="cta" href="https://wa.me/2347014718354">Place Order</a>
-</div>
-
-    <div class="product" style="background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.85)), url('pf.jpg'); background-size: cover; background-position: center;">
-  <h3>Shop Collection</h3>
-  <p></p>
-  <a class="cta" href="https://wa.me/2347014718354">Place Order</a>
-</div>
+<!-- Avanti -->
+<div class="product-card">
+  <img src="avanti5k.jpg">
+  <div class="product-info">
+    <h3>Avanti</h3>
+    <p class="price">₦5,000</p>
+    <p class="description">Luxury unisex fragrance for everyday elegance.</p>
+    <a href="https://wa.me/2347014718354">Order on WhatsApp</a>
   </div>
-</section><!-- ABOUT --><section id="about">
-  <h2>About ZIN</h2>
-  <p class="about">ZIN Scents blends elegance and identity into carefully curated unisex fragrances alongside modest, refined abayas and scarfs. Designed for calm confidence, luxury, and everyday grace.</p>
-  <div class="social-icons">
-    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
-    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+</div>
+
+<!-- Asad -->
+<div class="product-card">
+  <img src="asad30k.jpg">
+  <div class="product-info">
+    <h3>Asad</h3>
+    <p class="price">₦30,000</p>
+    <p class="description">Bold scent crafted for confident presence.</p>
+    <a href="https://wa.me/2347014718354">Order on WhatsApp</a>
   </div>
-</section><script>
-  function toggleMenu() {
-    document.getElementById('mobileMenu').classList.toggle('show');
-  }
-</script></body>
+</div>
+
+<!-- Ameerat Al Arab -->
+<div class="product-card">
+  <img src="ameeratalarab30k.jpg">
+  <div class="product-info">
+    <h3>Ameerat Al Arab</h3>
+    <p class="price">₦30,000</p>
+    <p class="description">Premium fragrance with timeless character.</p>
+    <a href="https://wa.me/2347014718354">Order on WhatsApp</a>
+  </div>
+</div>
+
+<!-- 24K Homme -->
+<div class="product-card">
+  <img src="24khomme8k.jpg">
+  <div class="product-info">
+    <h3>24K Homme</h3>
+    <p class="price">₦8,000</p>
+    <p class="description">Clean masculine scent for daily wear.</p>
+    <a href="https://wa.me/2347014718354">Order on WhatsApp</a>
+  </div>
+</div>
+
+<!-- Classic Scarf -->
+<div class="product-card">
+  <img src="scarf.jpg">
+  <div class="product-info">
+    <h3>Classic Scarf</h3>
+    <p class="price">₦5,000</p>
+    <p class="description">Elegant modest wear for refined style.</p>
+    <a href="https://wa.me/2347014718354">Order on WhatsApp</a>
+  </div>
+</div>
+
+<!-- JS Scarf -->
+<div class="product-card">
+  <img src="jscarf.jpg">
+  <div class="product-info">
+    <h3>JS Scarf</h3>
+    <p class="price">₦5,000</p>
+    <p class="description">Soft, premium scarf for modern modest fashion.</p>
+    <a href="https://wa.me/2347014718354">Order on WhatsApp</a>
+  </div>
+</div>
+
+<!-- Jalabiya -->
+<div class="product-card">
+  <img src="jb.jpg">
+  <div class="product-info">
+    <h3>Jalabiya for Men</h3>
+    <p class="price">Contact for Price</p>
+    <p class="description">Traditional elegance crafted with comfort.</p>
+    <a href="https://wa.me/2347014718354">Order on WhatsApp</a>
+  </div>
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section>
+<h2>About ZIN</h2>
+<p class="about">
+ZIN Scents blends elegance and identity into carefully curated unisex fragrances alongside modest, refined abayas and scarfs. Designed for calm confidence, luxury, and everyday grace.
+</p>
+</section>
+
+<footer>
+© 2026 ZIN Scents. All rights reserved.
+</footer>
+
+</body>
 </html>
