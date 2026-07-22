@@ -202,8 +202,142 @@ image:"images/perfumes/IMG_4436.PNG"
 ],
 
 
-    abayas: [
 
-    ]
+
+abayas: [
+
+{
+name:"Premium Abaya 01",
+price:"₦60,000",
+image:"images/abayas/IMG_2188.JPG"
+},
+
+{
+name:"Premium Abaya 02",
+price:"₦75,000",
+image:"images/abayas/IMG_4474.JPG"
+},
+
+{
+name:"Premium Abaya 03",
+price:"₦60,000",
+image:"images/abayas/Screenshot_20260722-151655.jpg"
+},
+
+{
+name:"Premium Abaya 04",
+price:"₦65,000",
+image:"images/abayas/Screenshot_20260722-151725.jpg"
+},
+
+{
+name:"Premium Abaya 05",
+price:"₦70,000",
+image:"images/abayas/Screenshot_20260722-151744.jpg"
+},
+
+{
+name:"Premium Abaya 06",
+price:"₦60,000",
+image:"images/abayas/Screenshot_20260722-151817.jpg"
+},
+
+{
+name:"Premium Abaya 07",
+price:"₦65,000",
+image:"images/abayas/IMG_4569.JPG"
+},
+
+{
+name:"Premium Abaya 08",
+price:"₦75,000",
+image:"images/abayas/IMG_4568.JPG"
+},
+
+{
+name:"Premium Abaya 09",
+price:"₦75,000",
+image:"images/abayas/IMG_4563.JPG"
+},
+
+{
+name:"Premium Abaya 10",
+price:"₦80,000",
+image:"images/abayas/IMG_4564.JPG"
+},
+
+{
+name:"Premium Abaya 11",
+price:"₦65,000",
+image:"images/abayas/IMG_4565.JPG"
+},
+
+{
+name:"Premium Abaya 12",
+price:"₦75,000",
+image:"images/abayas/IMG_4566.JPG"
+},
+
+{
+name:"Premium Abaya 13",
+price:"₦75,000",
+image:"images/abayas/IMG_4561.JPG"
+},
+
+{
+name:"Premium Abaya 14",
+price:"₦80,000",
+image:"images/abayas/IMG_4562.JPG"
+},
+
+{
+name:"Premium Abaya 15",
+price:"₦85,000",
+image:"images/abayas/IMG_4559.JPG"
+},
+
+{
+name:"Premium Abaya 16",
+price:"₦70,000",
+image:"images/abayas/IMG_4560.JPG"
+},
+
+{
+name:"Premium Abaya 17",
+price:"₦75,000",
+image:"images/abayas/IMG_4555.JPG"
+},
+
+{
+name:"Premium Abaya 18",
+price:"₦86,000",
+image:"images/abayas/IMG_4556.JPG"
+},
+
+{
+name:"Premium Abaya 19",
+price:"₦85,000",
+image:"images/abayas/IMG_4557.JPG"
+},
+
+{
+name:"Premium Abaya 20",
+price:"₦75,000",
+image:"images/abayas/IMG_4558.JPG"
+},
+
+{
+name:"Premium Abaya 21",
+price:"₦75,000",
+image:"images/abayas/IMG_4554.JPG"
+},
+
+{
+name:"Premium Abaya 22",
+price:"₦56,000",
+image:"images/abayas/IMG_2190.JPG"
+}
+
+],
 
 };
