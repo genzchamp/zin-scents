@@ -1,8 +1,10 @@
 renderProducts(products.jallabiyas, "products");
 
 renderProducts(products.perfumes, "perfumes");
+
 renderProducts(products.abayas, "abayas");
 
+renderProducts(products.scarves, "scarves");
 
 
 // Scroll reveal animation
@@ -87,6 +89,7 @@ document.getElementById("perfumes").style.display="none";
 
 document.getElementById("abayas").style.display="none";
 
+document.getElementById("scarves").style.display="none";
 
 collection.style.display="grid";
 
@@ -124,3 +127,9 @@ toggleCollection("abayas");
 };
 
 
+document.getElementById("show-scarves")
+.onclick=function(){
+
+toggleCollection("scarves");
+
+};

@@ -340,4 +340,45 @@ image:"images/abayas/IMG_2190.JPG"
 
 ],
 
+
+
+scarves:[
+
+{name:"Luxury Scarf & Cap 01",price:"From ₦3,800",image:"images/scarves/IMG_4580.JPG"},
+{name:"Luxury Scarf & Cap 02",price:"From ₦3,800",image:"images/scarves/IMG_4581.JPG"},
+{name:"Luxury Scarf & Cap 03",price:"From ₦3,800",image:"images/scarves/IMG_4583.JPG"},
+{name:"Luxury Scarf & Cap 04",price:"From ₦3,800",image:"images/scarves/IMG_4584.JPG"},
+{name:"Luxury Scarf & Cap 05",price:"From ₦3,800",image:"images/scarves/IMG_4585.JPG"},
+{name:"Luxury Scarf & Cap 06",price:"From ₦3,800",image:"images/scarves/IMG_4587.JPG"},
+{name:"Luxury Scarf & Cap 07",price:"From ₦3,800",image:"images/scarves/IMG_4588.JPG"},
+{name:"Luxury Scarf & Cap 08",price:"From ₦3,800",image:"images/scarves/IMG_4589.JPG"},
+{name:"Luxury Scarf & Cap 09",price:"From ₦3,800",image:"images/scarves/IMG_4590.JPG"},
+{name:"Luxury Scarf & Cap 10",price:"From ₦3,800",image:"images/scarves/IMG_4591.JPG"},
+{name:"Luxury Scarf & Cap 11",price:"From ₦3,800",image:"images/scarves/IMG_4592.JPG"},
+{name:"Luxury Scarf & Cap 12",price:"From ₦3,800",image:"images/scarves/IMG_4593.JPG"},
+{name:"Luxury Scarf & Cap 13",price:"From ₦3,800",image:"images/scarves/IMG_4594.JPG"},
+{name:"Luxury Scarf & Cap 14",price:"From ₦3,800",image:"images/scarves/IMG_4595.JPG"},
+{name:"Luxury Scarf & Cap 15",price:"From ₦3,800",image:"images/scarves/IMG_4596.JPG"},
+{name:"Luxury Scarf & Cap 16",price:"From ₦3,800",image:"images/scarves/IMG_4597.JPG"},
+{name:"Luxury Scarf & Cap 17",price:"From ₦3,800",image:"images/scarves/IMG_4598.JPG"},
+{name:"Luxury Scarf & Cap 18",price:"From ₦3,800",image:"images/scarves/IMG_4599.JPG"},
+{name:"Luxury Scarf & Cap 19",price:"From ₦3,800",image:"images/scarves/IMG_4600.JPG"},
+{name:"Luxury Scarf & Cap 20",price:"From ₦3,800",image:"images/scarves/IMG_4601.JPG"},
+{name:"Luxury Scarf & Cap 21",price:"From ₦3,800",image:"images/scarves/IMG_4602.JPG"},
+{name:"Luxury Scarf & Cap 22",price:"From ₦3,800",image:"images/scarves/IMG_4603.JPG"},
+{name:"Luxury Scarf & Cap 23",price:"From ₦3,800",image:"images/scarves/IMG_4604.JPG"},
+{name:"Luxury Scarf & Cap 24",price:"From ₦3,800",image:"images/scarves/IMG_4605.JPG"},
+{name:"Luxury Scarf & Cap 25",price:"From ₦3,800",image:"images/scarves/IMG_4606.JPG"},
+{name:"Luxury Scarf & Cap 26",price:"From ₦3,800",image:"images/scarves/IMG_4607.JPG"},
+{name:"Luxury Scarf & Cap 27",price:"From ₦3,800",image:"images/scarves/IMG_4609.JPG"},
+{name:"Luxury Scarf & Cap 28",price:"From ₦3,800",image:"images/scarves/IMG_4610.JPG"},
+{name:"Luxury Scarf & Cap 29",price:"From ₦3,800",image:"images/scarves/IMG_4611.JPG"},
+{name:"Luxury Scarf & Cap 30",price:"From ₦3,800",image:"images/scarves/IMG_4612.JPG"},
+{name:"Luxury Scarf & Cap 31",price:"From ₦3,800",image:"images/scarves/IMG_4613.JPG"},
+{name:"Luxury Scarf & Cap 32",price:"From ₦3,800",image:"images/scarves/IMG_4614.JPG"},
+{name:"Luxury Scarf & Cap 33",price:"From ₦3,800",image:"images/scarves/IMG_4635.JPG"},
+{name:"Luxury Scarf & Cap 34",price:"From ₦3,800",image:"images/scarves/IMG_4636.JPG"}
+
+]
+
 };
