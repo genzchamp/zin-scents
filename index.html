@@ -3,211 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="theme-color" content="#0b0b0b">
+<meta name="description" content="ZIN LUXE — premium modest fashion, fragrances, scarves and caps.">
 <title>ZIN LUXE | Luxury Modest Fashion & Fragrances</title>
-
 <link rel="icon" href="assets/logo/llogo.png">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 <body>
-
-<header>
-    <img src="assets/logo/llogo.png" alt="ZIN LUXE Logo">
-
-    <a href="https://wa.me/2347014718354">
-        WhatsApp
-    </a>
+<div class="announcement">PRIVATE LUXURY • MODEST FASHION • SIGNATURE FRAGRANCES</div>
+<header class="site-header" id="top">
+  <a class="brand" href="#top" aria-label="ZIN LUXE home"><img src="assets/logo/llogo.png" alt="ZIN LUXE Logo"></a>
+  <nav class="desktop-nav" aria-label="Primary navigation">
+    <a href="#collections">Collections</a>
+    <a href="#about">The ZIN Edit</a>
+    <a href="https://wa.me/2347014718354" target="_blank" rel="noopener">WhatsApp</a>
+  </nav>
+  <a class="header-cta" href="https://wa.me/2347014718354" target="_blank" rel="noopener">Enquire <span>↗</span></a>
 </header>
-
-
+<main>
 <section class="hero">
-
-    <img
-        src="images/hero/IMG_4431.JPG"
-        class="hero-image"
-        alt="ZIN Luxe Hero">
-
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content">
-
-        <p class="hero-tag">
-            LUXURY MODEST FASHION
-        </p>
-
-        <h1>ZIN LUXE</h1>
-
-        <p>
-            Discover Premium Jallabiyas,
-            Abayas & Fragrances Crafted
-            For Timeless Elegance.
-        </p>
-
-<a href="#collections">
-    Explore Collection
-</a>
-
-
-    </div>
-
+  <img src="images/hero/IMG_4431.JPG" class="hero-image" alt="ZIN Luxe fashion" fetchpriority="high">
+  <div class="hero-shade"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <p class="eyebrow">ZIN LUXE / 01 — MODEST LUXURY</p>
+    <h1>Quiet luxury.<br><em>Distinctly ZIN.</em></h1>
+    <p class="hero-copy">Premium jallabiyas, abayas, fragrances, scarves and caps selected for a refined everyday wardrobe.</p>
+    <div class="hero-actions"><a class="btn btn-solid" href="#collections">Explore the edit <span>↓</span></a><a class="text-link" href="https://wa.me/2347014718354" target="_blank" rel="noopener">Speak with ZIN <span>↗</span></a></div>
+  </div>
+  <div class="hero-note"><span>EST. 2026</span><span>CURATED MODEST LUXURY</span></div>
 </section>
-
-
-
-
+<section class="intro" id="about">
+  <div><p class="eyebrow">THE ZIN EDIT</p><h2>Luxury without<br><em>the noise.</em></h2></div>
+  <div class="intro-copy"><p>ZIN LUXE brings together elevated modest fashion and statement fragrances with a focus on presence, detail and timeless appeal.</p><p class="muted">Browse the collection, then message us directly for your preferred piece, sizing, availability and order details.</p></div>
+</section>
 <section class="collections" id="collections">
-
-<h2>OUR COLLECTIONS</h2>
-
-
-<div class="category-card">
-
-<img
-src="images/categories/jallabiya.jpg"
-class="category-image"
-alt="Jallabiyas">
-
-<h3>JALLABIYAS</h3>
-
-<p>
-Premium Islamic Fashion.<br>
-Elegant. Timeless. Refined.
-</p>
-
-
-<button id="show-jallabiyas">
-View Collection
-</button>
-
-<div id="products"></div>
-
-</div>
-
-
-
-<div class="category-card">
-
-<img
-src="images/categories/perfume.jpg"
-class="category-image"
-alt="Perfumes">
-
-<h3>PERFUMES</h3>
-
-<p>
-Luxury Arabic Fragrances.<br>
-Crafted to leave an impression.
-</p>
-
-
-
-<button id="show-perfumes">
-View Collection
-</button>
-
-<div id="perfumes"></div>
-
-</div>
-
-
-
-<div class="category-card">
-
-<img
-src="images/categories/abaya.jpg"
-class="category-image"
-alt="Abayas">
-
-
-<h3>ABAYAS</h3>
-
-<p>Elegant Women's Fashion</p>
-
-<button id="show-abayas">
-View Collection
-</button>
-
-<div id="abayas"></div>
-
-</div>
-
-
-
-
-
-<div class="category-card">
-
-<img
-src="images/categories/scarves.jpg"
-class="category-image"
-alt="Scarves & Caps">
-
-<h3>SCARVES & CAPS</h3>
-
-<p>
-Luxury Scarves and Elegant Caps.
-</p>
-
-<button id="show-scarves">
-View Collection
-</button>
-
-<div id="scarves"></div>
-
-</div>
-
-
-
-
-
-
-
-
+  <div class="section-head"><div><p class="eyebrow">02 — COLLECTIONS</p><h2>Choose your <em>signature.</em></h2></div><p>Tap into a collection and discover the current ZIN LUXE selection.</p></div>
+  <div class="category-grid">
+    <article class="category-card category-featured"><img src="images/categories/jallabiya.jpg" alt="Jallabiyas" loading="lazy"><div class="category-overlay"></div><div class="category-content"><span>01 / JALLABIYAS</span><h3>Jallabiyas</h3><p>Premium Islamic fashion. Elegant, timeless, refined.</p><button data-target="products">View collection <b>↗</b></button></div></article>
+    <article class="category-card"><img src="images/categories/perfume.jpg" alt="Perfumes" loading="lazy"><div class="category-overlay"></div><div class="category-content"><span>02 / PERFUMES</span><h3>Perfumes</h3><p>Luxury Arabic fragrances crafted to leave an impression.</p><button data-target="perfumes">View collection <b>↗</b></button></div></article>
+    <article class="category-card"><img src="images/categories/abaya.jpg" alt="Abayas" loading="lazy"><div class="category-overlay"></div><div class="category-content"><span>03 / ABAYAS</span><h3>Abayas</h3><p>Elegant women's fashion with a composed silhouette.</p><button data-target="abayas">View collection <b>↗</b></button></div></article>
+    <article class="category-card"><img src="images/categories/scarves.jpg" alt="Scarves and Caps" loading="lazy"><div class="category-overlay"></div><div class="category-content"><span>04 / SCARVES + CAPS</span><h3>Scarves & Caps</h3><p>Refined finishing pieces for the complete look.</p><button data-target="scarves">View collection <b>↗</b></button></div></article>
+  </div>
+  <div class="collection-panel" id="products"><div class="panel-head"><div><span>JALLABIYAS</span><h3>The Jallabiya Edit</h3></div><button class="close-collection" aria-label="Close collection">Close ×</button></div><div class="product-grid"></div></div>
+  <div class="collection-panel" id="perfumes"><div class="panel-head"><div><span>PERFUMES</span><h3>The Fragrance Edit</h3></div><button class="close-collection" aria-label="Close collection">Close ×</button></div><div class="product-grid"></div></div>
+  <div class="collection-panel" id="abayas"><div class="panel-head"><div><span>ABAYAS</span><h3>The Abaya Edit</h3></div><button class="close-collection" aria-label="Close collection">Close ×</button></div><div class="product-grid"></div></div>
+  <div class="collection-panel" id="scarves"><div class="panel-head"><div><span>SCARVES + CAPS</span><h3>The Finishing Edit</h3></div><button class="close-collection" aria-label="Close collection">Close ×</button></div><div class="product-grid"></div></div>
 </section>
-
-
-
-<a 
-class="whatsapp-float"
-href="https://wa.me/2347014718354"
-target="_blank">
-
-💬
-
-</a>
-
-<footer>
-
-<p>
-© 2026 ZIN LUXE. All rights reserved.
-</p>
-
-</footer>
-
-<div class="lightbox" id="lightbox">
-
-<span class="close-lightbox">&times;</span>
-
-<img id="lightbox-image">
-
-</div>
-
-
-<script src="js/products.js"></script>
-<script src="js/render.js"></script>
-<script src="js/script.js"></script>
-
-
-<a href="#collections"
-class="collections-float">
-
-↑
-
-</a>
-
-
+<section class="closing"><p class="eyebrow">03 — PERSONAL SERVICE</p><h2>Find the piece<br><em>that feels like you.</em></h2><p>For price, specifications, sizing or availability, our WhatsApp line is always open.</p><a class="btn btn-solid" href="https://wa.me/2347014718354" target="_blank" rel="noopener">Chat with ZIN LUXE <span>↗</span></a></section>
+</main>
+<footer><div class="footer-brand"><img src="assets/logo/llogo.png" alt="ZIN LUXE Logo"><p>Luxury modest fashion & fragrances.</p></div><div><a href="#collections">Collections</a><a href="https://wa.me/2347014718354" target="_blank" rel="noopener">WhatsApp</a></div><div class="copyright">© 2026 ZIN LUXE. All rights reserved.</div></footer>
+<a class="whatsapp-float" href="https://wa.me/2347014718354" target="_blank" rel="noopener" aria-label="Chat with ZIN LUXE on WhatsApp">⌁</a>
+<a class="back-top" href="#top" aria-label="Back to top">↑</a>
+<div class="lightbox" id="lightbox"><button class="close-lightbox" aria-label="Close image">×</button><img id="lightbox-image" alt="Product preview"></div>
+<script src="js/products.js"></script><script src="js/render.js"></script><script src="js/script.js"></script>
 </body>
 </html>
